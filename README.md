@@ -23,6 +23,8 @@ To run this project locally, follow these steps:
 ## Usage
 To view the conversion page, simply open the `index.html` file in your browser. Since this project is built with HTML and CSS only, it provides a static view of the conversion page layout without interactive functionality.
 
+Note: The website is not yet responsive and is currently best viewed on a desktop.
+
 
 ## Contributing
 We welcome contributions from the community! To contribute, please follow these steps:
