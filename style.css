@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    /* height: 100%; */
+}
+
+html, body{ 
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: #fff;
+    font-family: 'manrope', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-top: 30px;
+    /* padding: 100px; */
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+/* this is where the form  section start from. */
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 40px;
+    width: 30%;
+    padding: 30px 40px;
+    border: 2px solid #FFE0E0;
+    border-radius: 20px;
+    margin: auto;
+    /* margin-top: 20px; */
+    background-color: #FFF6F6;
+}
+    /* first set of buttons containter */
+    .top {
+        display: flex;
+        justify-content: start;
+        gap: 10px;
+        width: max-content;
+    }
+        /* the buttons */
+        .btn {
+            display: block;
+            font-family: 'manrope', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            padding: 10px 15px;
+            width: 150px;
+            background-color: #A20004;
+            color: whitesmoke;
+            border-radius: 3px;
+            border: none;
+        }
+
+        .otherbtn {
+            background-color: inherit;
+            border: solid 1px #A20004;
+            color: #A20004;
+        }
+    
+    /* The middle section of the form */
+    .mid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        width: 100%;
+        gap: 20px;
+    }
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+        }
+            .cont {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 5px; 
+                padding: 10px;
+                background-color: #FFEDED;
+                border-radius: 5px;
+            }
+
+            .bottomcont {
+                padding-bottom: 20px;
+            }
+
+            .hold {
+                display: block;
+                width: 100%;
+                text-align: right;
+                font-size: 0.7rem;
+            }
+
+            .small-txt {
+                font-size: 0.5rem !important;
+                font-family: 'manrope', sans-serif;
+                letter-spacing: 1px;
+            }
+
+                .seperator {
+                    display: flex;
+                    width: 100%;
+                    border-bottom: solid 2px #ECBEBE;
+                    padding-bottom: 5px;
+                }
+
+                    .label {
+                        font-size: 0.7rem;
+                        letter-spacing: 1px;
+                        color: #858383;
+                    }
+
+                    .input {
+                        width: 100%;
+                        border: none;
+                        background-color: inherit;
+                        font-size: 1.5rem;
+                        font-family: 'manrope', sans-serif;
+                        letter-spacing: 1px;
+                        /* color: whitesmoke; */
+                    }
+
+                    .asset {
+                        display: flex;
+                        justify-content: space-around;
+                        gap: 2px;
+                        border-left: solid 2px #ECBEBE;
+                        padding: 5px 5px;
+                        font-family: 'manrope', sans-serif;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                    }
+
+                    .icon {
+                        max-width: 20px;
+                        max-height: 20px;
+                    }
+                
+                .flip {
+                    padding: 5px 10px; 
+                    border-radius: 5px;
+                    background-color: #FFE0E0;
+                }
+
+        .lower {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+            .wrap-II {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                width: 100%;
+                font-family: 'manrope', sans-serif;
+            }
+                .counter {
+                    color: black;
+                    font-weight: bold;
+                    font-family: 'manrope', sans-serif;
+                }
+
+    .convert {
+        display: block;
+        width: 100%;
+        /* max-height: 50px; */
+        text-align: center;
+        font-size: 1rem;
+        font-family: 'manrope', sans-serif;
+        background-color: #A20004;
+        color: whitesmoke;
+        border-radius: 5px;
+        padding: 15px 0px;
+        border: none;
+    }
