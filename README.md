@@ -37,6 +37,5 @@ We welcome contributions from the community! To contribute, please follow these 
 ## Contact
 For any questions or feedback, please reach out to:
 Email: sonowosamuel@icloud.com
-Telegram
 
 Thank you for checking out the P2P Cryptohub Conversion Page! We hope you find it visually appealing and look forward to your contributions.
