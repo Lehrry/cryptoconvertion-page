@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
     /* height: 100%; */
 }
 
@@ -11,8 +12,9 @@ html, body{
     font-family: 'manrope', sans-serif;
     font-size: 1rem;
     letter-spacing: 1px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     /* padding: 100px; */
+    /* this is to keep the page h & W the same size as the scroll + No scrolling function */
     height: 100vh;
     width: 100%;
     margin: 0;
@@ -26,30 +28,30 @@ html, body{
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    gap: 40px;
-    width: 30%;
-    padding: 30px 40px;
-    border: 2px solid #FFE0E0;
-    border-radius: 20px;
+    gap: 20px;
+    max-width: 350px;
+    padding: 20px 20px;
+    border: 1px solid #FFE0E0;
+    border-radius: 10px;
     margin: auto;
-    /* margin-top: 20px; */
+    margin-top: 50px;
     background-color: #FFF6F6;
 }
     /* first set of buttons containter */
     .top {
         display: flex;
         justify-content: start;
-        gap: 10px;
-        width: max-content;
+        gap: 5px;
+        /* width: max-content; */
     }
         /* the buttons */
         .btn {
             display: block;
             font-family: 'manrope', sans-serif;
-            font-size: 0.7rem;
+            font-size: 0.5rem;
             letter-spacing: 1px;
-            padding: 10px 15px;
-            width: 150px;
+            padding: 10px 10px;
+            width: 100px;
             background-color: #A20004;
             color: whitesmoke;
             border-radius: 3px;
@@ -58,7 +60,7 @@ html, body{
 
         .otherbtn {
             background-color: inherit;
-            border: solid 1px #A20004;
+            border: solid 1.5px #A20004;
             color: #A20004;
         }
     
@@ -69,13 +71,13 @@ html, body{
         justify-content: space-between;
         align-items: start;
         width: 100%;
-        gap: 20px;
+        gap: 15px;
     }
         .wrap {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
+            gap: 15px;
             width: 100%;
         }
             .cont {
@@ -97,6 +99,7 @@ html, body{
                 width: 100%;
                 text-align: right;
                 font-size: 0.7rem;
+                letter-spacing: 0.5px;
             }
 
             .small-txt {
@@ -108,12 +111,12 @@ html, body{
                 .seperator {
                     display: flex;
                     width: 100%;
-                    border-bottom: solid 2px #ECBEBE;
                     padding-bottom: 5px;
-                }
+                    border-bottom: solid 2px #ECBEBE;
+                    }
 
                     .label {
-                        font-size: 0.7rem;
+                        font-size: 0.5rem;
                         letter-spacing: 1px;
                         color: #858383;
                     }
@@ -122,32 +125,33 @@ html, body{
                         width: 100%;
                         border: none;
                         background-color: inherit;
-                        font-size: 1.5rem;
+                        font-size: 1.2rem;
                         font-family: 'manrope', sans-serif;
-                        letter-spacing: 1px;
+                        /* letter-spacing: 1px; */
                         /* color: whitesmoke; */
                     }
 
                     .asset {
                         display: flex;
                         justify-content: space-around;
+                        align-items: center;
                         gap: 2px;
                         border-left: solid 2px #ECBEBE;
                         padding: 5px 5px;
                         font-family: 'manrope', sans-serif;
-                        font-size: 1rem;
-                        font-weight: bold;
+                        font-size: 0.7rem;
+                        font-weight: 500;
                         letter-spacing: 1px;
                     }
 
                     .icon {
-                        max-width: 20px;
-                        max-height: 20px;
+                        max-width: 15px;
+                        max-height: 15px;
                     }
                 
                 .flip {
-                    padding: 5px 10px; 
-                    border-radius: 5px;
+                    padding: 2px 6px; 
+                    border-radius: 2px;
                     background-color: #FFE0E0;
                 }
 
@@ -163,6 +167,17 @@ html, body{
                 width: 100%;
                 font-family: 'manrope', sans-serif;
             }
+
+                .left {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    letter-spacing: -0.5px;
+                }
+
+                .right {
+                    line-height: 20px;
+                }
+
                 .counter {
                     color: black;
                     font-weight: bold;
@@ -174,11 +189,78 @@ html, body{
         width: 100%;
         /* max-height: 50px; */
         text-align: center;
-        font-size: 1rem;
+        letter-spacing: 1px;
+        font-size: 0.7rem;
         font-family: 'manrope', sans-serif;
+        font-weight: 600;
         background-color: #A20004;
         color: whitesmoke;
         border-radius: 5px;
-        padding: 15px 0px;
+        padding: 10px 0px;
         border: none;
     }
+
+
+/* responsive section */
+/* screens lesser than 350px */
+@media (max-width: 350px) { 
+    /* reducing reducing the form size */
+    .form {
+        width: 300px;
+    }
+}
+
+/* screen larget than 990px. The the screen below this has been covered by the actual css as the max-width is set to 350px */
+@media (min-width: 990px) and (max-width: 1200px) {
+    html, body {
+        font-size: 1.2rem;
+        letter-spacing: 1.5px;
+    }
+
+    /* increasing form size to sit well on the screen */
+    .form {
+        max-width: 400px;
+        margin-top: 110px;
+    }
+
+    .btn {
+        width: 130px;
+        font-size: 0.65rem;
+        letter-spacing: 1.5px;
+    }
+
+    .input {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .convert {
+        font-size: 0.85rem;
+    }
+}
+
+/* 
+screen larger 1200px. 
+This will be the last breakpoint as i will not cater for screen above 1440px.   */
+@media (min-width: 1200px) {
+    html, body {
+        font-size: 1.2rem;
+    }
+
+    .form {
+        max-width: 500px;
+        margin-top: 100px;
+        padding: 30px 20px;
+    }
+
+    .btn {
+        font-size: 0.65rem;
+        width: 150px;
+    }
+
+    .input {
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: -1px;
+    }
+}
