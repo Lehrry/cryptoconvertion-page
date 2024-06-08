@@ -25,6 +25,13 @@ To view the conversion page, simply open the `index.html` file in your browser. 
 
 Note: The website is not yet responsive and is currently best viewed on a desktop.
 
+The Page is not fully responsive across devices. 
+There are three breakpoints applied. 
+350px
+900px
+1200px
+
+
 
 ## Contributing
 We welcome contributions from the community! To contribute, please follow these steps:
